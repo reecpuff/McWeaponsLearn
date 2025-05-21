@@ -9,14 +9,13 @@ import java.util.Random;
 public class ChestRoom {
 
     //fields - we need a field for the random function, and for each chest
-    private final Random random;
+    private final Random random = new Random();
     private final List<Weapon> swordLoot;
     private final List<Weapon> hammerLoot;
 
 
     //constructors
     public ChestRoom() {
-        this.random = new Random();
 
         this.swordLoot = List.of(WeaponLibrary.STRAIGHT_SWORD,
                 WeaponLibrary.CURVED_SWORD,
@@ -25,7 +24,9 @@ public class ChestRoom {
                 WeaponLibrary.SWORD_OF_LIGHT,
                 WeaponLibrary.SWORD_OF_DARKNESS
         );
-        this.hammerLoot = List.of(WeaponLibrary.WOODEN_CLUB);
+        this.hammerLoot = List.of(WeaponLibrary.WOODEN_CLUB,
+                WeaponLibrary.WAR_HAMMER,
+                WeaponLibrary.BELL_OF_PETER);
     }
 
     //Sword chest method

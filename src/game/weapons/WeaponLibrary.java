@@ -12,5 +12,6 @@ public class WeaponLibrary {
 
     //Hammers
     public static final Hammer WOODEN_CLUB = new Hammer("Wooden Club", 10, WeaponRarity.COMMON);
-
+    public static final Hammer WAR_HAMMER = new Hammer("War Hammer", 20, WeaponRarity.RARE);
+    public static final Hammer BELL_OF_PETER = new Hammer("Bell of Peter", 50, WeaponRarity.EPIC);
 }
